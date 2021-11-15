@@ -7,10 +7,10 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		
 		Scanner lector = new Scanner(System.in);
-		System.out.println("Dime un año pa mostrar PIBs");
+		System.out.println("Dime un aÃ±o para mostrar PIBs");
 		String anoUsuario = lector.nextLine();
 		
-		System.out.println("Dime el pib de España en "+ anoUsuario + ":");
+		System.out.println("Dime el pib de Espaï¿½a en "+ anoUsuario + ":");
 		int pibEspana = Integer.parseInt(lector.nextLine());
 		System.out.println("Dime el pib de Francia en "+ anoUsuario + ":");
 		int pibFrancia = Integer.parseInt(lector.nextLine());
