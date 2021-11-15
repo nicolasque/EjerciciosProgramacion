@@ -112,9 +112,9 @@ public class ej6 {
 		
 		//Dias promedio
 		System.out.println("De promedio han vivido " + ((diasVividos1+diasVividos2+diasVividos3)/3) + "Dias.");
+	//Cambio
 	
 	
-	//cambio
 	}
 
 }
