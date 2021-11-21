@@ -6,47 +6,47 @@ public class ej6 {
 
 	public static void main(String[] args) {
 
-		Scanner scaner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		//Datos1
 		System.out.println("Dime tu nomre:");
-		String respuestaNombre1 = scaner.nextLine();
+		String respuestaNombre1 = sc.nextLine();
 		
 		System.out.println("Dime tu año de nacimiento:");
-		int respuestaAnoNacimiento1 = scaner.nextInt();
+		int respuestaAnoNacimiento1 = Integer.parseInt(sc.nextLine());
 		
 		System.out.println("Dime tu genero (h/m):");
-		char respuestaGenero1 = scaner.next().charAt(0);
+		char respuestaGenero1 = sc.next().charAt(0);
 		
 		System.out.println("Dime tu altura (en m):");
-		float respuestaAltura1 = scaner.nextFloat();
+		float respuestaAltura1 = sc.nextFloat();
 		
 		
 		//Datos2
 		System.out.println("Dime tu nomre:");
-		String respuestaNombre2 = scaner.nextLine();
+		String respuestaNombre2 = sc.next();
 		
 		System.out.println("Dime tu año de nacimiento:");
-		int respuestaAnoNacimiento2 = scaner.nextInt();
+		int respuestaAnoNacimiento2 = sc.nextInt();
 		
 		System.out.println("Dime tu genero (h/m):");
-		char respuestaGenero2 = scaner.next().charAt(0);
+		char respuestaGenero2 = sc.next().charAt(0);
 		
 		System.out.println("Dime tu altura (en m):");
-		float respuestaAltura2 = scaner.nextFloat();
+		float respuestaAltura2 = sc.nextFloat();
 		
 		//Datos3
 		System.out.println("Dime tu nomre:");
-		String respuestaNombre3 = scaner.nextLine();
+		String respuestaNombre3 = sc.next();
 		
 		System.out.println("Dime tu año de nacimiento:");
-		int respuestaAnoNacimiento3 = scaner.nextInt();
+		int respuestaAnoNacimiento3 = sc.nextInt();
 		
 		System.out.println("Dime tu genero (h/m):");
-		char respuestaGenero3 = scaner.next().charAt(0);
+		char respuestaGenero3 = sc.next().charAt(0);
 		
 		System.out.println("Dime tu altura (en m):");
-		float respuestaAltura3 = scaner.nextFloat();
+		float respuestaAltura3 = sc.nextFloat();
 		
 		//Altura media
 		System.out.println("La altura media de los 3 es de: " + (((respuestaAltura1 + respuestaAltura2 + respuestaAltura3)/3 )+100) + "cm");
@@ -80,7 +80,7 @@ public class ej6 {
 			contM = contM + 1;
 		};
 		
-		System.out.println("Hay" + contH + "hombres y " + contM + " mujeres");
+		System.out.println("\nHay " + contH + " hombres y " + contM + " mujeres\n ");
 		
 		
 		//Nombre mas largo 
@@ -96,23 +96,22 @@ public class ej6 {
 		
 		//Horas de vida
 		int diasVividos1 = ((2021 - respuestaAnoNacimiento1)*365);
-		int diasVividos2 = ((2021 - respuestaAnoNacimiento1)*365);
-		int diasVividos3 = ((2021 - respuestaAnoNacimiento1)*365);
+		int diasVividos2 = ((2021 - respuestaAnoNacimiento2)*365);
+		int diasVividos3 = ((2021 - respuestaAnoNacimiento3)*365);
 
 		
 	
-		System.out.println(respuestaNombre1 + " ha vivido:"+ (diasVividos1*24) + "horas");
-		System.out.println(respuestaNombre2 + " ha vivido:"+ (diasVividos2*24) + "horas");
-		System.out.println(respuestaNombre3 + " ha vivido:"+ (diasVividos3*24) + "horas");
+		System.out.println(respuestaNombre1 + " ha vivido: "+ (diasVividos1*24) + " horas");
+		System.out.println(respuestaNombre2 + " ha vivido: "+ (diasVividos2*24) + " horas");
+		System.out.println(respuestaNombre3 + " ha vivido: "+ (diasVividos3*24) + " horas");
 		
 		//Dias vividos
-		System.out.println(respuestaNombre1 + "\n\n ha vivido:"+ diasVividos1 + "dias");
-		System.out.println(respuestaNombre2 + "\n\n ha vivido:"+ diasVividos2 + "dias");
-		System.out.println(respuestaNombre3 + "\n\n ha vivido:"+ diasVividos3 + "dias");
+		System.out.println(respuestaNombre1 + "ha vivido:"+ diasVividos1 + " dias");
+		System.out.println(respuestaNombre2 + "ha vivido:"+ diasVividos2 + " dias");
+		System.out.println(respuestaNombre3 + "ha vivido:"+ diasVividos3 + " dias");
 		
 		//Dias promedio
 		System.out.println("De promedio han vivido " + ((diasVividos1+diasVividos2+diasVividos3)/3) + "Dias.");
-	//Cambio2ewe34nuvo 
 	
 	
 	}
