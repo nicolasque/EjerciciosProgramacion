@@ -1,4 +1,4 @@
-package Programacion.prueba;
+package ej5;
 
 import java.util.Scanner;
 
