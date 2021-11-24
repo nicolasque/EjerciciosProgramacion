@@ -31,7 +31,6 @@ public class ej10 {
 			System.out.println(strinCasas);
 			
 		}
-		
 		}
 		
 	}
