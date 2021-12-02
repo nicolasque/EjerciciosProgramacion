@@ -177,7 +177,7 @@ public class ej11 {
 
 					Random random = new Random();
 
-					int value = random.nextInt(max + min) + min;
+					int value = random.nextInt(max + min);
 
 					if (value == 2 ) {
 						System.out.println(nombreMascota + "ha decidido acabar con su vida.");
