@@ -51,10 +51,31 @@ public class ej13 {
 		int max = 2;
 
 		Random numeroRandom = new Random();
-
+		boolean boleanRandom = true;
 		int value = numeroRandom.nextInt(max + min);
 		
-		respuestaAleatoria(value);
+		if (value == 1) {
+			boolean boelanRandom = true;
+		}		
+		else {
+			boolean boelanRandom = false;
+		};
+		System.out.println("Ahoara mostre una cara con un 50% de probabilidades de que te guiñe, seras el afortunado?");
+		
+		System.out.println(respuestaAleatoria(boleanRandom));
+		
+		//impresion de ojos iguales
+		System.out.println("Caras con los ojos iguales");
+		for(long i = 0; i<numeroCaras;i++) {
+			value = 2;
+		System.out.println(respuestaAleatoria(boleanRandom));
+		};
+		//impresion ojos distintos
+		System.out.println("caras con los ojos distintos");
+		for(long i = 0; i<numeroCaras;i++) {
+			value = 1;
+			System.out.println(respuestaOjosBoca(respuestaOjos, respuestaBoca));
+		};
 		
 	}
 
@@ -70,15 +91,15 @@ public class ej13 {
 		return caraOriginal.replace('o' , respuestaOjos).replace('~', respuestaBoca);
 
 	};
-	public static String respuestaAleatoria(int value) {
+	public static String respuestaAleatoria(boolean boelanRandom) {
 		String caraOriginal = 
 				  "_______ \n"
 				+ "\\x   x/ \n"
-				+ " \\ ~ / \n"
+				+ " \\ m / \n"
 				+ "  ''' ";
 		
 		
-		if (value == 1) {
+		if (boelanRandom == true) {
 		return caraOriginal.replaceFirst("x", "u");
 	
 		}
