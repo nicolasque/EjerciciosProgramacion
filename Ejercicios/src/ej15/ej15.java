@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class ej15 {
 
 	public static void main(String[] args) {
-
+		Scanner sc = new Scanner(System.in);
+		
 		String tectoCompleto = "\r\n"
 				+ "“Lorem fistrum diodenoo la caidita a gramenawer la caidita ahorarr a wan.\r\n"
 				+ "\r\n"
@@ -547,10 +548,21 @@ public class ej15 {
 				+ " tiene musho peligro de la pradera papaar papaar. Pecador pupita mamaar pupita quietooor\r\n"
 				+ "\r\n"
 				+ " qué dise usteer fistro caballo SandraJimenez 8blanco caballo negroorl papaar papaar.”";
-		System.out.println();
+		System.out.println("Dime tu nombre (Nico):");
+		String nombre = sc.nextLine();
 		
+		System.out.println("Dime tu apellido(Quecedo):");
+		String apellido = sc.nextLine();
 		
+		String nombreCompleto = nombre + apellido ;
 		
+		int posicion = tectoCompleto.indexOf(nombreCompleto) ;
+		int numeroTexto = posicion + 12;
+		
+		String numeroNombre = tectoCompleto.substring(numeroTexto, numeroTexto+1);
+		int numeroNombreInt = Integer.parseInt(numeroNombre);
+		System.out.println("El numero es: "+ numeroNombreInt);
+		System.out.println(tectoCompleto.substring(numeroTexto+1, numeroTexto+ numeroNombreInt +1 ));
 	}
 
 }
